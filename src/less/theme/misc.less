@@ -1,0 +1,155 @@
+header{
+	height: 51px;
+}
+.menu {
+	background:#ffffff; 
+	color:#000000; 
+	height:auto; 
+	line-height:40px;
+	letter-spacing:1px; 
+	width:100%;
+	padding:5px 0 5px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+//Megamenu
+.formegamenu{
+	width: auto;
+	top: auto;
+	padding: 0;
+	margin: 0 0 0 5px;
+}
+/*
+.megamenu{
+	margin: 0 0 0 15px;
+	top: auto;
+	bottom: auto;
+	border-top-width: 0px;
+	border-bottom-width: 1px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	left: 0px;
+	right: 0px;
+	padding: 0 0 0 0;
+	position: absolute;
+}
+*/
+.nav > li > div{
+    position: absolute;
+    //display: block;
+    width: 100%;
+    top: 50px;
+    left: 0;
+ 
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+ 
+    background: #ffffff;
+    border-radius: 0 0 3px 3px;
+ 
+    -webkit-transition: all .3s ease .15s;
+    -moz-transition: all .3s ease .15s;
+    -o-transition: all .3s ease .15s;
+    -ms-transition: all .3s ease .15s;
+    transition: all .3s ease .15s;
+}
+/*
+.nav > li:hover > div{
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+}
+*/
+.opa{
+	opacity: 1 !important;
+	visibility: visible !important;
+	overflow: visible !important;
+	display: block !important;
+}
+//Multiple file upload
+.thumb {
+  height: 75px;
+  border: 1px solid #000;
+  margin: 10px 5px 0 0;
+}
+img {
+  vertical-align: middle;
+}
+//Make nav-bar fixed and slide
+.navbar{
+	margin-bottom: 0;
+}
+.navbar-slide-top{
+	top: 0;
+	border-width: 0 0 1px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+//Listado productos
+.clist{
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+.pagination{
+	margin: 0;
+	button{
+		margin-right: 15px;
+	}
+}
+.side-more-menu{
+	display: block;
+	width: 180px;
+	height: auto;
+	position: fixed;
+	top: 161px;
+	z-index: 9999;
+	text-align: left;
+	transition: left 350ms,opacity 350ms;
+	-webkit-transition: left 350ms,opacity 350ms;
+}
+//Buttons
+.btn-plus{
+	margin-top: 4px;
+}
+
+//Images
+.cartimgmini{
+	width: 50px;
+}
+
+//HELPERS
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align 
+    text-align:left; */
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+//Botton scrollToTop
+.back-to-top {
+    position: fixed;
+    right: 0;
+    bottom: 10%;
+    width: 44px;
+    height: 44px;
+    background: #292929;
+    color: #a8a49e;
+    text-align: center;
+    font-size: 0.64em;
+    z-index: 1035;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}

@@ -1,0 +1,116 @@
+@import url('chosen.css');
+
+.dropdown-submenu{
+    position:relative;
+}
+ 
+.dropdown-submenu > .dropdown-menu
+{
+    top:0;
+    left:100%;
+    margin-top:-6px;
+    margin-left:-1px;
+    -webkit-border-radius:0 6px 6px 6px;
+    -moz-border-radius:0 6px 6px 6px;
+    border-radius:0 6px 6px 6px;
+}
+ 
+.dropdown-submenu:hover > .dropdown-menu{
+    display:block;
+}
+ 
+.dropdown-submenu > a:after{
+    display:block;
+    content:" ";
+    float:right;
+    width:0;
+    height:0;
+    border-color:transparent;
+    border-style:solid;
+    border-width:5px 0 5px 5px;
+    border-left-color:#cccccc;
+    margin-top:5px;
+    margin-right:-10px;
+}
+ 
+.dropdown-submenu:hover > a:after{
+    border-left-color:#ffffff;
+}
+ 
+.dropdown-submenu .pull-left{
+    float:none;
+}
+ 
+.dropdown-submenu.pull-left > .dropdown-menu{
+    left:-100%;
+    margin-left:10px;
+    -webkit-border-radius:6px 0 6px 6px;
+    -moz-border-radius:6px 0 6px 6px;
+    border-radius:6px 0 6px 6px;
+}
+
+/***** TABLES *****/
+/******************/
+
+.dataTables_length .chosen-container {
+	min-width: 75px;
+}
+
+.dataTables_length .chosen-container-single .chosen-single {
+	padding-right: 0;
+}
+
+.table-action {
+	text-align: center;
+}
+
+.table-action-hide a {
+	opacity: 0;
+}
+
+.table-action a,
+.table-action-hide a {
+	display: inline-block;
+	margin-right: 5px;
+	color: #666;
+}
+
+.table-action a:hover,
+.table-action-hide a:hover {
+	color: #333;
+}
+
+.table-action a:last-child,
+.table-action-hide a:last-child {
+	margin-right: 0;
+}
+
+/* CHOSEN OVERRIDE */
+
+.chosen-container-single .chosen-single div {
+	width: 30px;
+	border-left: 1px solid #ccc;
+	background: #e4e7ea;
+}
+
+.chosen-container-single .chosen-single div b {
+	background: url('../images/dropdown-arrow.png') no-repeat 8px 15px;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div {
+	width: 30px;
+	border-left: 0;
+	background: #fff;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+	background-position: 8px -33px;
+}
+
+/**Override**/
+
+label {
+   font-weight: normal !important;
+   margin-bottom: 5px !important;
+   color: #4a535e;
+}

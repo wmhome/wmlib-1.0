@@ -1,0 +1,119 @@
+.wm-nav-header{
+	height: 40px;
+	vertical-align: middle;
+	background-color: #f0f0f0;
+	padding: 10px 25px 0 25px;
+	border-bottom: 1px solid #c9c9c9;
+	.navbar-nav{
+		li a{
+			padding-top:0;
+			padding-bottom: 0;
+			color: #8a8a8a;
+			font-size: 13px;
+		}
+	}
+	span{
+		color: #8a8a8a;
+		font-size: 13px;
+	}
+}
+.wm-navbar{
+	background-color: #ffffff;
+	border-radius: 0;
+	border: 0;
+	&.inside{
+		background-color: transparent;
+		.navbar-collapse{
+			background-color: #fbfbfb;
+			//margin-left: 0;
+			margin-right: 0;
+			//padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+	.navbar-header{
+		padding-left: 15px;
+	}
+	.navbar-collapse{
+		border-bottom: 1px solid #f0f0f0;
+		.list-top-header{
+			padding: 10px 0;
+			a{
+				color: #858585;
+				margin-right: 12px;
+				&:hover{
+					text-decoration: none;
+					color: #aec3ff;
+				}
+				span{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	&.fixed{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin-right: auto;
+		border-bottom: 2px solid #c9c9c9;
+		background-color: #ffffff;
+		z-index: 9999;
+		-webkit-box-shadow: 0px 3px 14px -2px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 3px 14px -2px rgba(0,0,0,0.75);
+		box-shadow: 0px 3px 14px -2px rgba(0,0,0,0.75);
+		&.inside{
+			max-width: 1170px;
+			margin: 0 auto;
+			background-color: #fbfbfb;
+		}
+	}
+	.navbar-toggle{
+		border: 0;
+		border-radius: 0;
+		&:focus, &:hover{
+			background-color: transparent;
+		}
+	}
+	.navbar-brand img{
+		margin-top: -12px;
+		width: 15%;
+	}
+}
+
+@media (min-width: 768px){
+	.fixed.inside {
+	    width: 750px;
+	 }
+}
+@media (min-width: 992px){
+	.fixed.inside {
+	    width: 970px;
+	 }
+}
+@media (min-width: 1200px){
+	.fixed.inside {
+	    width: 1170px;
+	 }
+}
+.sb-right{
+	background-color: #ffffff;
+}
+@media (max-width: 768px){
+	.wm-navbar{
+		border-bottom: 2px solid #c9c9c9;
+		background-color: #ffffff;
+		z-index: 9999;
+		-webkit-box-shadow: 0px 3px 14px -2px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 3px 14px -2px rgba(0,0,0,0.75);
+		box-shadow: 0px 3px 14px -2px rgba(0,0,0,0.75);
+		.navbar-brand{
+			width: 280px;
+			padding: 15px 0 15px 5px;
+		}
+		.navbar-toggle{
+			margin-right: 1px;
+		}
+	}
+}

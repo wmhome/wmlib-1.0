@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WMLiB</title>
+
+    <!-- WM CSS Lib -->
+    <link href="../css/wmcsslib.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="container">
+	  	<div class="row">
+		  	<div class="col-sm-6 col-sm-offset-3">
+			    <h1><img class="img-responsive" src="../assets/img/cerbell.png"></h1>
+			    <div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Wellcome to WhiteMind HTML&CSS Library.</h3>
+					</div>
+					<div class="panel-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label for="username" class="col-sm-3 control-label">User name</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" id="username" name="username" placeholder="User name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="password" class="col-sm-3 control-label">Password</label>
+								<div class="col-sm-9">
+									<input type="password" class="form-control" id="password" name="password" placeholder="Password">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<button type="button" class="btn btn-default" id="logIn"><i class="fa fa-sign-in"></i> Sign in</button>
+								</div>
+							</div>
+							<div class="more-login">
+								<a class="btn btn-link col-sm-6" href="#">Remember password</a>
+								<a class="btn btn-link col-sm-6" href="#">Register</a>
+							</div>
+						</form>
+					</div>
+				</div>
+		  	</div>
+		</div>
+  	</div>
+  	<!--Lightbox-->
+	<div id="mylightbox" class="modal" tabindex="-1" role="dialog" aria-labelledby="myh3" aria-hidden="true" >
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i></i>Close</button>
+			<h3 id="myh3" align="center">Incorrect user, please try again.</h3>
+		</div>
+		<div class="modal-body">
+			
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-blue" data-dismiss="modal">Try again</button>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Incorrect user, please try again.</h4>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary bttryagain" data-dismiss="modal">Try again</button>
+	        <button type="button" class="btn btn-success btenter">Enter</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/components/shortcuts/jquery.hotkey.min.js"></script>
+    <script>
+		$(document).hotkey('shift+a', function(e){
+			autoCompletForm();
+		});
+		function autoCompletForm() {
+			//alert("SI");
+			Object.prototype.size = function () {
+				var len = this.length ? --this.length : -1;
+				for (var k in this)
+					len++;
+				return len;
+			}
+		
+			var data = new Object();
+			data["username"] = "username@mail.com";
+			data["password"] = "mypassword";
+			$('#username').val(data['username']);
+			$('#password').val(data['password']);
+			
+		}
+		
+		
+		$('#logIn').click(function(){
+			var data = new Object();
+			data["username"] = $('#username').val();
+			data["password"] = $('#password').val();
+			if((data["username"] == "username@mail.com") && (data["password"] == "mypassword")){
+				//alert("OK");
+				$('#myModal').modal('show');
+				$('.modal-title').html("Correct User");
+				$('.bttryagain').hide();
+				$('.btenter').show();
+				$('.btenter').click(function(){
+					$('#myModal').modal('hide');
+					document.location.href="home.html";
+				});
+				//document.location.href="home.html";
+			}
+			else{
+				//alert("Incorrect user, please try again.");
+				$('#myModal').modal('show');
+				$('.btenter').hide();
+				$('#username').attr("value","");
+				$('#password').attr("value","");
+			}
+		});
+	</script>
+  </body>
+</html>

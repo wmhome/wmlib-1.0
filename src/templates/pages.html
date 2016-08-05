@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WMLiB</title>
+
+    <!-- WM CSS Lib -->
+    <link href="../css/wmcsslib.css" rel="stylesheet">
+    <link href="../css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div id="wrapper">
+  	<header>
+  		<div class="js-include" title="nav.html" data-class="js"></div>
+  	</header>
+  	<div class="page-wrap">
+  	<div class="container">
+  		<div class="bradcrumb">
+  			<ol class="breadcrumb">
+			  <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+			  <li class="active">Pages</li>
+			</ol>
+  		</div>
+  		<h1>Pages</h1>
+  		<hr>
+  		
+  		<div class="row">
+  			<div class="col-sm-12">
+  				<div class="list-group">
+				  <a href="login.html" class="list-group-item">
+				    <h4 class="list-group-item-heading">Login</h4>
+				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				  </a>
+				  <a href="profile.html" class="list-group-item">
+				    <h4 class="list-group-item-heading">Profile</h4>
+				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				  </a>
+				  <a href="../plantillas/BucketAdmin1.4/html/profile.html" class="list-group-item" target="_blank">
+				    <h4 class="list-group-item-heading">Profile 2</h4>
+				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				  </a>
+				  <a href="uploadfiles_3.html" class="list-group-item">
+				    <h4 class="list-group-item-heading">UploadFiles</h4>
+				    <p class="list-group-item-text">This page functions with PHP & MySQL.</p>
+				  </a>
+				  <a href="galleries.php" class="list-group-item">
+				    <h4 class="list-group-item-heading">Galleries</h4>
+				    <p class="list-group-item-text">This page functions with PHP & MySQL.</p>
+				  </a>
+				  <a href="../plantillas/cleanse/blog.html" class="list-group-item" target="_blank">
+				    <h4 class="list-group-item-heading">Blog</h4>
+				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				  </a>
+				  <a href="../plantillas/cleanse/portfolio-fullpage.html" class="list-group-item" target="_blank">
+				    <h4 class="list-group-item-heading">Portfolio</h4>
+				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				  </a>
+				  <a href="../plantillas/cleanse/contact.html" class="list-group-item" target="_blank">
+				    <h4 class="list-group-item-heading">Contact</h4>
+				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				  </a>
+				  <a href="www.whitemind.es" class="list-group-item" target="_blank">
+				    <h4 class="list-group-item-heading">Coming soon</h4>
+				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				  </a>
+				</div>
+				<div class="back-home mbm">
+					<a href="home.html" class="btn btn-icon"><i class="fa fa-chevron-circle-left"></i> back to home</a>
+				</div>
+  			</div>
+  		</div>
+  	</div>
+  	</div>
+  	</div>
+  	<footer class="footer">
+  		<div class="container">
+  			<p class="text-muted">Create by WhiteMind.es</p>
+  		</div>
+  	</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/components/jasny/jasny-bootstrap.min.js"></script>
+    <script>
+    //Script to include files and components
+    $(".js-include").each(function(){
+	    var inc=$(this);
+	    $.get(inc.attr("title"), function(data){
+	        inc.replaceWith(data);
+	    });
+	});
+    </script>
+  </body>
+</html>

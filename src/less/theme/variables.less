@@ -1,0 +1,25 @@
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Minimun width of the grid
+@grid-min-width:            320px;
+//** Number of columns in the grid.
+@grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         30px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+//@grid-float-breakpoint:     @screen-sm-min;
+//** Point at which the navbar begins collapsing.
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+//** Bricks
+@brick-base:                (@grid-gutter-width/2);
+@brick-lg:                  @grid-gutter-width;
+
+//** Spaces helpers
+@space-sm:                  floor(@brick-base/2);
+@space-md:                  @brick-base;
+@space-lg:                  @brick-lg;
+@space-xlg:                 (@brick-lg * 2);

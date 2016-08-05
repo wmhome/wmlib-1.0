@@ -1,0 +1,250 @@
+.megamenu {
+	background:#ffffff; 
+	color:#000000; 
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	top: 0;
+	z-index: 500;
+	> ul{
+		border-bottom: 1px solid #f0f0f0;
+		margin-left: 0;
+		margin-bottom: 0;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		padding-left: 5px;
+	}
+	&.inverse{
+		ul:not(.row){
+			background-color: #444;
+			> li{
+				&:hover{
+						background-color: #555;
+					}
+				> a{
+					color: #f0f0f0;
+					&:hover{
+						background-color: #555;
+					}
+				}
+			}
+		}
+	}
+	// reset positions 
+	.nav, .collapse, .dropup, .dropdown {
+		position: static;
+	}  
+	
+	// by default aligns menu to left
+	.dropdown-menu {
+		left: auto;
+		top: auto;
+		margin: 5px 15px;
+		ul{
+			padding:0px;
+		}
+	}
+	
+	// Content with padding 
+	.megamenu-content {
+		padding: 20px 30px;
+	}
+	
+	// Fullwidth menu
+	.dropdown.megamenu-fw .dropdown-menu {
+		left: 0; right: 0; top: 45px;
+	}
+	// Halfwidth menu
+	.dropdown.megamenu-hw .dropdown-menu {
+		left: auto;
+		width: 50%;
+	}
+	
+	&.fixed{
+		position: fixed;
+		top: 50px;
+		left: 0;
+		right: 0;
+		width: inherit;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	li.dropdown a.menu-item{
+		line-height:40px;
+		letter-spacing:1px; 
+	}
+	// Colors
+	.green{
+		background: #1abc9c;
+		color: white;
+	}
+	.dropdown-header{
+		display: block;
+		padding: 5px 15px;
+		font-size: 16px;
+		line-height: 20px;
+		white-space: nowrap;
+		font-weight: bold;
+	}
+	
+	// Megamenu all
+	.mgdropdowncaret{
+		position: absolute;
+		right: 10px;
+		top: 6px;
+		color: #f0f0f0;
+		font-size: 12px;
+	}
+	.h-divider:after {
+		background-color: #555555;
+	}
+	.h-divided>*:after {
+		content: '';
+		margin-top: -1px;
+		width: 100%;
+		height: 1px;
+		display: block;
+		z-index: 1;
+		background-color: #555555;
+	}
+	.sub-megamenu{ 
+		width: inherit;
+		margin: 0 -1px 0 0;
+		ul{
+			padding: 0;
+		}
+		li{
+			&.active{
+				a{
+					color: #f7f7f7;
+					background-color: #333;
+					text-decoration: none;
+				}
+			}
+			a{
+				display: block;
+				padding: 5px 15px 5px 15px;
+				clear: both;
+				font-weight: 400;
+				line-height: 20px;
+				white-space: nowrap;
+				cursor: pointer;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				color: #dddddd;
+				background-color: #444444;
+				&:hover{
+					text-decoration: none;
+					color: #f7f7f7;
+					background-color: #333;
+				}
+				.desc{
+					color: #aaaaaa;
+					display: block;
+					font-size: smaller;
+					text-overflow: ellipsis;
+					overflow: hidden;
+				}
+			}
+		}
+		h4{
+			margin-top: 0px;
+			margin-bottom: 0px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.divided{
+			position: relative;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-direction: normal;
+			-moz-box-direction: normal;
+			-webkit-box-orient: horizontal;
+			-moz-box-orient: horizontal;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-box-pack: start;
+			-moz-box-pack: start;
+			-webkit-justify-content: flex-start;
+			-ms-flex-pack: start;
+			justify-content: flex-start;
+			-webkit-align-content: stretch;
+			-ms-flex-line-pack: stretch;
+			align-content: stretch;
+			-webkit-box-align: stretch;
+			-moz-box-align: stretch;
+			-webkit-align-items: stretch;
+			-ms-flex-align: stretch;
+			align-items: stretch;
+			
+			>*:before{
+				border-color: #555555;
+				margin: -1px -1px 0px 0px;
+				content: '';
+				position: absolute;
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+				z-index: -1;
+				border-width: 1px;
+				border-style: solid;
+				
+				background: transparent !important;
+			}
+			
+			li:not(.row)>a{
+				margin-left: 1px;
+				margin-bottom: 1px;
+			}
+			li:not(.list-group) > a{
+				color: #dddddd;
+				background-color: #444444;
+			}
+			
+			li{		
+				&.active{
+					a{
+						color: #f7f7f7;
+						background-color: #333;
+						text-decoration: none;
+					}
+				}
+				a{
+					display: block;
+					padding: 5px 15px 5px 15px;
+					clear: both;
+					font-weight: 400;
+					line-height: 20px;
+					white-space: nowrap;
+					cursor: pointer;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					color: #dddddd;
+					background-color: #444444;
+					&:hover{
+						text-decoration: none;
+						color: #f7f7f7;
+						background-color: #333;
+					}
+					.desc{
+						color: #aaaaaa;
+						display: block;
+						font-size: smaller;
+						text-overflow: ellipsis;
+						overflow: hidden;
+					}
+				}
+			}
+		}
+	}
+}

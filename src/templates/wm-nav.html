@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>WMLiB</title>
+
+    <!-- WM CSS Lib -->
+    <link href="../css/wmcsslib.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/snippet/jquery.snippet.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div id="page"> 
+  	<div id="wrapper" class="page-wrap">
+	  	<header>
+	  		<div class="wm-nav-header hidden-xs">
+	  			<div class="container">
+	  				<div class="row">
+	  				<div class="col-xs-12">
+		  			<span><span class="fa fa-phone"></span> +34 607 26 07 66</span><span class="mlm"><span class="fa fa-envelope-o"></span> sergi@wmhome.es</span>
+		  			<span class="pull-right">
+		  				<ul class="nav navbar-nav navbar-right">
+		  					<li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Idiomas <span class="caret"></span></a>
+					          <ul class="dropdown-menu" role="menu">
+					          	<li><a href="#"><img src="../assets/img/flags/Spain-flag.png"> Español</a></li>
+					          	<li><a href="#"><img src="../assets/img/flags/United-kingdom-flag.png"> English</a></li>
+					          </ul>
+					        </li>
+					        <li><a href="#" data-toggle="modal" data-target="#login" role="button"><span class="fa fa-sign-in"></span> Login</a></li>
+					        <li><a href="#"><span class="fa fa-user-plus"></span> Registro</a></li>
+					        <li><a href="#"><span class="fa fa-shopping-cart"></span> Carrito</a></li>
+		  				</ul>
+		  			</span>
+	  				</div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<nav class="navbar navbar-default wm-navbar">
+	  			<div class="container">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle visible-xs collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#">WMLiB</a>
+				    </div>
+				
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="list-inline list-top-header visible-xs">
+						<li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Idiomas <span class="caret"></span></a>
+				          <ul class="dropdown-menu" role="menu">
+				          	<li><a href="#"><img src="../assets/img/flags/Spain-flag.png"> Español</a></li>
+				          	<li><a href="#"><img src="../assets/img/flags/United-kingdom-flag.png"> English</a></li>
+				          </ul>
+				        </li>
+				        <li><a href="#"><span class="fa fa-sign-in"></span> </a></li>
+				        <li><a href="#"><span class="fa fa-user-plus"></span> </a></li>
+				        <li><a href="#"><span class="fa fa-shopping-cart"></span> </a></li>
+				        <li class="social"><a href="https://www.facebook.com/thematicparadise?fref=ts" class="fa fa-facebook" data-name="facebook" data-type="" data-prefix="social" data-utf="E031"></a></li>
+						<li class="social"><a href="#" class="fa fa-twitter" data-name="twitter" data-type="" data-prefix="social" data-utf="E031"></a></li>
+						<li class="social"><a href="https://www.youtube.com/channel/UCpo3xX4dvdKFC-O2dVUiJ-g" class="fa fa-youtube" data-name="youtube" data-type="" data-prefix="social" data-utf="E031"></a></li>
+					</ul>
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
+				        <li><a href="#">Empresa</a></li>
+				        <li><a href="../plantillas/hermes/index.html" target="_blank">Portfolio</a></li>
+				        <li><a href="#">Contacto</a></li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+	  		</nav>
+	  	</header>
+	  	<div class="container mtxl">
+	  		<div class="bradcrumb">
+	  			<ol class="breadcrumb">
+				  <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+				  <li><a href="html_components.html">HTML Components</a></li>
+				  <li class="active">WM Nav</li>
+				</ol>
+	  		</div>
+	  		<h1>WM Navbar & backToTop btn <small>sticky at scroll</small></h1>
+	  		<hr>
+	  		<div class="row mbl">
+	  			<div class="col-sm-12">
+	  				<a type="button" class="inside-navbar btn btn-default" role="button">Inside navbar</a>
+	  				<a class="fluid-navbar btn btn-default">Fluid navbar</a>
+	  			</div>
+	  		</div>
+	  		<div class="row">
+	  			<div class="col-sm-12">
+	  				<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">WM Nav (fake content)</h3>
+						</div>
+						<div class="panel-body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat viverra justo, vitae cursus mauris tincidunt in. Integer dignissim lorem et feugiat mattis. Cras porta ligula ut interdum ultricies. Ut bibendum orci nibh, a aliquam dolor placerat vel. Cras dui nisl, volutpat vitae sodales suscipit, consequat sed mi. Nam mattis rhoncus sem. Quisque euismod erat turpis, id venenatis justo maximus quis.</p>
+	
+	<p>Praesent accumsan varius sem, vel ultrices nisl suscipit in. Ut felis odio, placerat nec neque ac, dapibus blandit sapien. Praesent pulvinar commodo tellus a pellentesque. Sed augue urna, bibendum at elit at, feugiat mollis leo. Nam commodo blandit cursus. Aenean maximus turpis et tellus gravida molestie a ac elit. Suspendisse urna elit, volutpat eget augue at, molestie malesuada sem. Quisque sit amet ipsum et dui tempus placerat. Proin sit amet egestas eros, a commodo felis. Sed vitae viverra massa, ut suscipit lectus. Etiam rhoncus, elit sed malesuada egestas, justo odio bibendum velit, in maximus ex dolor luctus felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut pretium metus pharetra turpis vulputate, sed placerat quam iaculis. Pellentesque et sodales quam, nec tincidunt tellus.</p>
+	
+	<p>Nam volutpat pulvinar sagittis. Pellentesque ultrices velit in purus vulputate, eu interdum eros accumsan. Vestibulum ut fringilla lorem. Suspendisse tempus tempus ex non dictum. Nulla felis est, ullamcorper a scelerisque sit amet, dignissim at felis. Cras aliquet orci maximus vehicula viverra. Integer quis turpis in mi lobortis lacinia sit amet et augue. Vestibulum ac dolor a orci bibendum convallis. Nullam interdum gravida est, sit amet tempus quam laoreet nec. Vivamus accumsan, justo sit amet vehicula lobortis, nunc erat dictum nibh, a accumsan tellus sapien quis diam. Etiam consequat dapibus imperdiet. Duis vitae iaculis nisl. Sed sit amet lorem elementum, euismod odio in, dignissim enim.</p>
+	
+	<p>Nullam ultrices lacus a mi pulvinar, quis mollis felis sollicitudin. Sed ac laoreet metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque pulvinar magna vel nulla finibus tristique. Maecenas commodo libero eget lacus tempus, non sodales turpis congue. Aliquam faucibus luctus augue, a consequat odio maximus at. Nullam venenatis imperdiet leo vitae aliquet. Cras elit dui, commodo in eros at, facilisis dignissim felis. Nullam ut ante non lacus dignissim accumsan. In quis rhoncus eros. Suspendisse non efficitur risus, at volutpat est. Maecenas consequat orci sit amet libero rutrum, eu scelerisque nisi commodo. Sed ut sollicitudin quam. Donec laoreet hendrerit semper. In pharetra quis diam in mattis. Nunc ac aliquam metus, eget hendrerit massa.</p>
+	
+	<p>Ut sit amet eros et leo laoreet aliquam at id libero. Suspendisse in molestie libero, et eleifend tellus. Phasellus tristique porta dolor, non pulvinar ligula facilisis sit amet. Pellentesque eget mattis ipsum, vel placerat ipsum. Nullam non tincidunt urna. Maecenas id nisl neque. Phasellus vel mi iaculis sem sodales malesuada. Nullam pharetra massa euismod velit lobortis sollicitudin. Maecenas ut accumsan mi. Curabitur vel volutpat nisl. Nulla at dapibus libero. Sed semper et nunc vel dapibus. Nunc sem mauris, laoreet eu massa vitae, congue tempor odio. Vestibulum tempus, diam vel semper aliquam, ex mauris dignissim tellus, dignissim scelerisque arcu elit eget quam.</p>
+						</div>
+					</div>
+	  			</div>
+	  		</div>
+	  		<div class="row">
+	  			<div class="col-sm-12">
+<!-- code -->
+<pre class="code-html-open">
+&lt;body>
+	&lt;div id="page">
+		&lt;div class="page-wrap">
+			&lt;!-- the header -->
+			&lt;header>...&lt;/header>
+			&lt;!-- the main content -->
+			&lt;div class="container">...&lt;/div>
+		&lt;/div>
+		&lt;!-- the footer -->
+		&lt;footer class="site-footer">...&lt;/footer>
+	&lt;/div>
+&lt;/body>
+</pre>
+<!-- /code -->
+<pre class="code-css-open">
+* {
+  margin: 0;
+}
+html, body {
+  min-height: 100%;
+  display: initial;
+}
+#page{
+	height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -75px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 75px; 
+}
+.site-footer {
+  background-color: #f1f1f1;
+}
+</pre>
+	  			</div>
+	  		</div>
+	  		<div class="row">
+		  		<div class="col-sm-12">
+			  		<div class="back-home mbl">
+						<a href="home.html" class="btn btn-icon"><i class="fa fa-chevron-circle-left"></i> back to home</a>
+					</div>
+		  		</div>
+		  	</div>
+	  	</div>
+  	</div>  	
+  	<footer class="site-footer">
+  		<div class="container">
+  			<p class="text-muted text-center mtl">&copy; WhiteMind - <a href="http://www.whitemind.es" target="_blank">www.whitemind.es</a> - <a href="http://www.wmhome.es" target="_blank">www.wmhome.es</a></p>
+  		</div>
+  	</footer>
+  	<div id="back-to-top" class="back-to-top" href="#" style="display: none;"><i class="fa fa-chevron-up ci-2x mts"></i><div class="back-to-top-text">Top</div></div>
+  </div>
+  	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h1 class="modal-title h4" id="myModalLabel">Login</h1>
+	      </div>
+	      <div class="modal-body">
+	        <form class="form-horizontal" enctype="multipart/form-data" method="post">
+	        	<div class="form-group">
+	        		<label class="col-sm-2 control-label" for="usuario">Usuario</label>
+	        		<div class="col-sm-10">
+	        			<input type="text" name="login" id="usuario" class="form-control">
+	        		</div>
+	        	</div>
+	        	<div class="form-group">
+	        		<label class="col-sm-2 control-label" for="pass">Contraseña</label>
+	        		<div class="col-sm-10">
+	        			<input type="password" name="pass" id="pass" class="form-control">
+	        		</div>
+	        	</div>
+	        	<div class="form-group mll">
+	        		<a href="#">Recordar contraseña</a>
+	        	</div>
+	        	<hr>
+	      	<a type="button" href="#" class="btn btn-success pull-left mrl"><span class="fa fa-user-plus"></span> Registro de nuevo usuario</a>
+	        <button type="button" class="btn btn-default mrm" data-dismiss="modal"><span class="glyphicon glyphicon-ban-circle"></span> Cancelar</button>
+	        <button type="submit" class="btn btn-info"><span class="fa fa-sign-in"> Entrar</span></button>
+	      </div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/components/snippet/jquery.snippet.min.js"></script>
+    <script>
+	//Sticky menu full width
+	$(document).ready(function(){
+		$(document).scroll(function () {
+		    var y = $(document).scrollTop(),
+		    header = $(".wm-navbar");
+		    console.log(y);
+		    if (y >= 120) {
+		        header.addClass('fixed').slideDown();
+		    } else {
+		        header.removeClass('fixed');
+		        
+		    }
+		    if ($(this).scrollTop() > 100) {
+			    $('.back-to-top').fadeIn();
+			} else {
+			    $('.back-to-top').fadeOut();
+			}
+		});
+		$('.back-to-top').click(function(){
+		    $("html, body").animate({ scrollTop: 0 }, 600);
+		    return false;
+		});
+		$('.inside-navbar').click(function(){
+			$('.wm-navbar').addClass('inside');
+		});
+		$('.fluid-navbar').click(function(){
+			$('.wm-navbar').removeClass('inside');
+		});
+		// Paint the code snippets
+		$("pre.code-html").snippet("html",{style:"zellner", menu:true, collapse:true, clipboard:"../js/ZeroClipboard.swf", showMsg:"Show code",hideMsg:"Hide code"});
+		$("pre.code-html-open").snippet("html",{style:"zellner", menu:true, collapse:false, clipboard:"../js/ZeroClipboard.swf"});
+		$("pre.code-html-clean").snippet("html",{style:"zellner", menu:false, collapse:false});
+		$("pre.code-css").snippet("css",{style:"zellner", menu:true, collapse:true, clipboard:"../js/ZeroClipboard.swf", showMsg:"Show code",hideMsg:"Hide code"});
+		$("pre.code-css-open").snippet("css",{style:"zellner", menu:true, collapse:false, clipboard:"../js/ZeroClipboard.swf"});
+		$("pre.code-css-clean").snippet("css",{style:"zellner", menu:false, collapse:false});
+		$("pre.code-sass").snippet("sass",{style:"zellner", menu:true, collapse:true, clipboard:"../js/ZeroClipboard.swf", showMsg:"Show code",hideMsg:"Hide code"});
+		$("pre.code-sass-open").snippet("sass",{style:"zellner", menu:true, collapse:false, clipboard:"../js/ZeroClipboard.swf"});
+		$("pre.code-sass-clean").snippet("sass",{style:"zellner", menu:false, collapse:false});
+	});
+    </script>
+  </body>
+</html>
